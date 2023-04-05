@@ -1,0 +1,14 @@
+.footer{
+    border-top: 1px solid #6a6a6b;
+    background-color: #e7e7e8;
+    padding:15px 10px 40px 10 px;
+    text-align: center;
+}
+
+.footer h6{
+    text-align: center;
+    color:#333;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    margin: 0;
+}
