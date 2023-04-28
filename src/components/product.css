@@ -1,0 +1,40 @@
+.product {
+    display: inline-block;
+    border: 1px solid #6a6a6a;
+    width: 240px;
+    height: 320px;
+    margin:5px 7px;
+    border-radius: 4px;
+}
+
+@media (max-width:400px){
+    .product{
+        width: 87%;
+        margin-left: 2%;
+        height: auto;
+    }
+    .product img{
+        width: 90%;
+        height: auto;
+        max-height: 400px;
+    }
+}
+
+.product h5
+{
+    margin-top: -2px;
+}
+
+.product:hover {
+    border-color: coral;
+}
+.product .prices{
+    display: flex;
+}
+.product .prices label {
+    flex: 1;
+}
+.product img{
+    width: 220px;
+    height: 180px;
+}

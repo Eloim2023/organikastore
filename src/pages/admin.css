@@ -1,0 +1,32 @@
+.admin {
+    padding-top: 20px;
+}
+
+.admin .parent {
+    display: flex;
+    justify-content: center;
+
+}
+
+.admin #secProducts {
+    flex: auto;
+    border: 1px solid #333;
+    border-radius: 4px;
+    max-width: 400px;
+    background-color: white;
+}
+
+.admin #secCoupons {
+    flex: auto;
+    max-width: 300px;
+}
+
+.admin section {
+    text-align: left;
+    padding: 20px 30px;
+}
+
+.admin form h4 {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
