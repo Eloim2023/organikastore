@@ -15,16 +15,18 @@ const Catalog = () => {
     //console.log("catalog loaded");
     loadCatalog();
   }, []);
-  function loadCatalog() {
+  
+  async function loadCatalog() {
     //get the product from the service
     let service = new DataService();
-    let prods = service.getProducts();
-    console.log(prods);
-    setProducts(prods);
 
-    let cat = ["Farm", "Patch", "Garden", "Store"];
-    setCategory(cat);
+    let prods = await service.getProducts();
+    setProducts(prods);
     setprodsToDisplay(prods);
+
+    let cats = await service.getCategories();
+    setCategory(cats);
+    
   }
 
   function filter(category) {
@@ -55,7 +57,7 @@ const Catalog = () => {
   return (
     <div className="page catalog">
       <h2>Check our amaizing catalog!</h2>
-      <h5> We have {products.length} products for you!! </h5>
+      <h5> We have {prodsToDisplay.length} products for you!! </h5>
 
       {category.map((c) => (
         <button

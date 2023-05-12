@@ -18,6 +18,14 @@
 
 .admin #secCoupons {
     flex: auto;
+    border: 1px solid #333;
+    border-radius: 4px;
+    max-width: 400px;
+    background-color: white;
+    margin-left: 30px;
+}
+.admin #secCoupons {
+    flex: auto;
     max-width: 300px;
 }
 
@@ -26,7 +34,23 @@
     padding: 20px 30px;
 }
 
-.admin form h4 {
-    text-align: left;
+.admin section h4 {
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.admin .item {
+    display: flex;
+    margin-bottom: 5px;
+    border: 1px solid #fafafa;
+    border-radius: 4px;
+}
+
+.admin .item span {
+    flex: 1;
+
+}
+
+.admin .item button {
+    align-self: flex-end;
+    justify-self: end;
 }
