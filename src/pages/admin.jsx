@@ -46,7 +46,7 @@ function Admin(){
 
         // create copy, modify the copy, set the copy back 
         let copy = [...allProducts];
-        copy.push(product);
+        copy.push(prodToSave);
         setAllProducts(copy);
 
     }
